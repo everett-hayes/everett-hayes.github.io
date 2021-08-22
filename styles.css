@@ -1,3 +1,27 @@
-#tester {
-    color: aqua;
+body {
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background: #023047;
+    margin: 0;
 }
+
+#blob-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#visual {
+    z-index: 0;
+}
+
+#name {
+    width: 200px;
+    z-index: 1;
+}
+
+/* #blob-container p {
+    justify-content: center;
+    align-items: center;
+} */
