@@ -5,29 +5,111 @@ body {
     margin: 0;
 }
 
-#blob-container {
-    position: relative;
+/* 00a878 */
+
+/* Nav Stuff*/
+
+#nav-container {
+    padding: 1.4em;
     display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-#visual {
-    z-index: 0;
-}
-
-#name {
-    width: 200px;
-    z-index: 1;
-}
-
-#text-container {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-/* #blob-container p {
     justify-content: center;
     align-items: center;
-} */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background: #023047;
+}
+
+/* footer stuff*/
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#footer i {
+    margin-right: 10px;
+}
+
+#footer p {
+    margin-left: 20px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: -webkit-sticky;
+	position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#far-links {
+    margin-left: 50%;
+}
+
+#far-links a {
+    margin-right: 15px;
+}
+
+/* Logo Animation Stuff*/
+#everettLogo {
+    animation: fill 1s ease forwards 3.8s;
+}
+
+#everettLogo path:nth-child(1) {
+    stroke-dasharray: 231.72px;
+    stroke-dashoffset: 231.72px;
+    animation: line-anim 2s ease forwards;
+}
+
+#everettLogo path:nth-child(2) {
+    stroke-dasharray: 177.55px;
+    stroke-dashoffset: 177.55px;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+
+#everettLogo path:nth-child(3) {
+    stroke-dasharray: 257.30px;
+    stroke-dashoffset: 257.30px;
+    animation: line-anim 2s ease forwards 0.6s;;
+}
+
+#everettLogo path:nth-child(4) {
+    stroke-dasharray: 122.95px;
+    stroke-dashoffset: 122.95px;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+
+#everettLogo path:nth-child(5) {
+    stroke-dasharray: 257.30px;
+    stroke-dashoffset: 257.30px;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+
+#everettLogo path:nth-child(6) {
+    stroke-dasharray: 157.36px;
+    stroke-dashoffset: 157.36px;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+
+#everettLogo path:nth-child(7) {
+    stroke-dasharray: 157.36px;
+    stroke-dashoffset: 157.36px;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    from {
+        fill: transparent
+    }
+    to {
+        fill: white;
+    }
+}
+
+/* Underline styles */
